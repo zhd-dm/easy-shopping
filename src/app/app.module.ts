@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { StorageComponent } from './storage/storage.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     HeaderComponent,
     FooterComponent,
     ProductCardComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    HomePageComponent,
+    StorageComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,

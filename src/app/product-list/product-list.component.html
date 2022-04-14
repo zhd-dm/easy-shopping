@@ -1,0 +1,119 @@
+<!-- <div class="main-wrapper" *ngFor="let product of storage">
+    <div class="main-title">
+        <span> Headphones </span>
+    </div>
+    <ul class="card-list-not-wireless">
+        <li class="card-item" *ngIf="!product.wireless">
+            <div class="card-logo">
+                <img src="{{ product.src }}" alt="">
+            </div>
+            <div class="card-footer">
+                <div class="card-first-line">
+                    <div class="card-title">
+                        <span> {{ product.title }} </span>
+                    </div>
+                    <div class="card-price">
+                        <span> {{ product.price }} ₽ </span>
+                    </div>
+                </div>
+                <div class="card-last-line">
+                    <div class="card-rate">
+                        <img src="../../assets/images/svg/rate.svg" alt="rate">
+                        <span> {{ product.rate }} </span>
+                    </div>
+                    <a href="#!" class="card-add-to-cart" data-id="{{ product.art }}"> Buy </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="main-wrapper" *ngFor="let product of storage">
+    <div class="main-title">
+        <span> Wireless headphones </span>
+    </div>
+    <ul class="card-list-wireless">
+        <li class="card-item" *ngIf="product.wireless">
+            <div class="card-logo">
+                <img src="{{ product.src }}" alt="">
+            </div>
+            <div class="card-footer">
+                <div class="card-first-line">
+                    <div class="card-title">
+                        <span> {{ product.title }} </span>
+                    </div>
+                    <div class="card-price">
+                        <span> {{ product.price }} ₽ </span>
+                    </div>
+                </div>
+                <div class="card-last-line">
+                    <div class="card-rate">
+                        <img src="../../assets/images/svg/rate.svg" alt="rate">
+                        <span> {{ product.rate }} </span>
+                    </div>
+                    <a href="#!" class="card-add-to-cart" data-id="{{ product.art }}"> Buy </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div> -->
+
+<!-- <div class="main-wrapper" *ngFor="let product of storage">
+    <div class="main-title">
+        <span> {{ product.type }} </span>
+    </div>
+    <ul class="card-list-{{ product.type }}">
+        <li class="card-item">
+            <div class="card-logo">
+                <img src="{{ product.src }}" alt="">
+            </div>
+            <div class="card-footer">
+                <div class="card-first-line">
+                    <div class="card-title">
+                        <span> {{ product.title }} </span>
+                    </div>
+                    <div class="card-price">
+                        <span> {{ product.price }} ₽ </span>
+                    </div>
+                </div>
+                <div class="card-last-line">
+                    <div class="card-rate">
+                        <img src="../../assets/images/svg/rate.svg" alt="rate">
+                        <span> {{ product.rate }} </span>
+                    </div>
+                    <a href="#!" class="card-add-to-cart" data-id="{{ product.art }}"> Buy </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div> -->
+
+<div class="main-wrapper">
+    <div class="main-title">
+        <span> Headphones </span>
+    </div>
+    <ul class="card-list-not-wireless">
+        <li class="card-item" *ngFor="let product of storage">
+            <div class="card-logo">
+                <img src="{{ product.src }}" alt="">
+            </div>
+            <div class="card-footer">
+                <div class="card-first-line">
+                    <div class="card-title">
+                        <span> {{ product.title }} </span>
+                    </div>
+                    <div class="card-price">
+                        <span> {{ product.price }} ₽ </span>
+                    </div>
+                </div>
+                <div class="card-last-line">
+                    <div class="card-rate">
+                        <img src="../../assets/images/svg/rate.svg" alt="rate">
+                        <span> {{ product.rate }} </span>
+                    </div>
+                    <a href="#!" class="card-add-to-cart" data-id="{{ product.art }}"> Buy </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
