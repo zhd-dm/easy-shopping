@@ -1,0 +1,30 @@
+<!-- <div class="main-wrapper"> -->
+<div class="main-title">
+    <span> Headphones </span>
+</div>
+<ul class="card-list-not-wireless">
+    <li class="card-item" *ngFor="let product of products">
+        <!-- <img src="../../assets/images/svg/like.svg" alt="" class="card-item-add-to-liked"> -->
+        <div class="card-logo">
+            <img src="{{ product.src }}" alt="">
+        </div>
+        <div class="card-footer">
+            <div class="card-first-line">
+                <div class="card-title">
+                    <span> {{ product.title }} </span>
+                </div>
+                <div class="card-price">
+                    <span> {{ product.price }} ₽ </span>
+                </div>
+            </div>
+            <div class="card-last-line">
+                <div class="card-rate">
+                    <img src="../../assets/images/svg/rate.svg" alt="rate">
+                    <span> {{ product.rate }} </span>
+                </div>
+                <a (click)="addToCart(product)" class="card-add-to-cart" data-id="{{ product.art }}"> Buy </a>
+            </div>
+        </div>
+    </li>
+</ul>
+<!-- </div> -->

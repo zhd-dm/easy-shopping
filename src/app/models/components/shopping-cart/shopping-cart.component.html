@@ -1,0 +1,42 @@
+<app-header></app-header>
+
+<main>
+    <div class="wrapper">
+        <div class="main-title">
+            <span> Cart </span>
+        </div>
+        <div class="main-wrapper">
+            <ul class="cart-items-list">
+                <li class="cart-item">
+                    <div class="product-header">
+                        <img class="product-image" src="${item.src}" alt="product-image">
+                        <div class="product-change-amount">
+                            <img class="product-decrease" data-id="${keys[i]}" src="./img/svg/-.svg" alt="product-decrease">
+                            <span class="product-amount" id="product-amount"> Selected Product Amount </span>
+                            <img class="product-increase" data-id="${keys[i]}" src="./img/svg/+.svg" alt="product-increase">
+                        </div>
+                    </div>
+                    <div class="product-main">
+                        <span class="product-title"> Item Title </span>
+                        <span class="product-price"> Item Price ₽ </span>
+                    </div>
+                    <div class="product-footer">
+                        <img class="product-delete" src="./img/svg/delete.svg" alt="product-delete">
+                        <span class="product-total-price"> Item Price * Selected Product Amount ₽ </span>
+                    </div>
+                </li>
+            </ul>
+            <div class="cart-purchase">
+                <div class="header-total-cart">
+                    <span class="total"> TOTAL </span>
+                    <span class="total"> Total ₽ </span>
+                </div>
+                <div class="footer-total-cart">
+                    <span class="checkout"> Go to checkout </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<app-footer></app-footer>
