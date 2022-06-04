@@ -10,6 +10,7 @@ import { PRODUCTS } from './data';
 export class ProductListComponent implements OnInit {
 
   products = PRODUCTS;
+  // let cart;
 
   constructor() {
 
@@ -19,7 +20,7 @@ export class ProductListComponent implements OnInit {
   }
 
   addToCart(product: Object) {
-    console.log(product)
+    // cart.push(product)
   }
 
 }

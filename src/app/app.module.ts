@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+
 import { HeaderComponent } from './models/components/header/header.component';
 import { FooterComponent } from './models/components/footer/footer.component';
 import { ProductCardComponent } from './models/components/product-card/product-card.component';
@@ -11,6 +13,8 @@ import { HomePageComponent } from './models/components/home-page/home-page.compo
 import { StorageComponent } from './models/components/storage/storage.component';
 import { ProductListComponent } from './models/components/product-list/product-list.component';
 import { PageNotFoundComponent } from './models/components/page-not-found/page-not-found.component';
+import { LoginFormComponent } from './models/components/login-form/login-form.component';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +26,13 @@ import { PageNotFoundComponent } from './models/components/page-not-found/page-n
     HomePageComponent,
     StorageComponent,
     ProductListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
