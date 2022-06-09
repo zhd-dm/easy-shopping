@@ -7,13 +7,11 @@ import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './models/components/header/header.component';
 import { FooterComponent } from './models/components/footer/footer.component';
-import { ProductCardComponent } from './models/components/product-card/product-card.component';
 import { ShoppingCartComponent } from './models/components/shopping-cart/shopping-cart.component';
 import { HomePageComponent } from './models/components/home-page/home-page.component';
 import { StorageComponent } from './models/components/storage/storage.component';
 import { ProductListComponent } from './models/components/product-list/product-list.component';
 import { PageNotFoundComponent } from './models/components/page-not-found/page-not-found.component';
-import { LoginFormComponent } from './models/components/login-form/login-form.component';
 
 
 @NgModule({
@@ -21,13 +19,11 @@ import { LoginFormComponent } from './models/components/login-form/login-form.co
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ProductCardComponent,
     ShoppingCartComponent,
     HomePageComponent,
     StorageComponent,
     ProductListComponent,
-    PageNotFoundComponent,
-    LoginFormComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

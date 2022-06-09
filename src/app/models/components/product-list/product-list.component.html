@@ -1,12 +1,12 @@
 <!-- <div class="main-wrapper"> -->
 <div class="main-title">
-    <span> Headphones </span>
+    <span> Products </span>
 </div>
 <ul class="card-list-not-wireless">
     <li class="card-item" *ngFor="let product of products">
         <!-- <img src="../../assets/images/svg/like.svg" alt="" class="card-item-add-to-liked"> -->
         <div class="card-logo">
-            <img src="{{ product.src }}" alt="">
+            <img src="{{ product.src }}" alt="" class="logo">
         </div>
         <div class="card-footer">
             <div class="card-first-line">
@@ -22,7 +22,7 @@
                     <img src="../../assets/images/svg/rate.svg" alt="rate">
                     <span> {{ product.rate }} </span>
                 </div>
-                <a (click)="addToCart(product)" class="card-add-to-cart" data-id="{{ product.art }}"> Buy </a>
+                <button (click)="addToCart(product.art)" class="card-add-to-cart" data-id="{{ product.art }}"> Buy </button>
             </div>
         </div>
     </li>

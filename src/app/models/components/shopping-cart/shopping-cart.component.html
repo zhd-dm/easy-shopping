@@ -7,13 +7,13 @@
         </div>
         <div class="main-wrapper">
             <ul class="cart-items-list">
-                <li class="cart-item">
+                <li class="cart-item" *ngFor="let product of cart">
                     <div class="product-header">
-                        <img class="product-image" src="${item.src}" alt="product-image">
+                        <img class="product-image" src="${product.src}" alt="product-image">
                         <div class="product-change-amount">
-                            <img class="product-decrease" data-id="${keys[i]}" src="./img/svg/-.svg" alt="product-decrease">
-                            <span class="product-amount" id="product-amount"> Selected Product Amount </span>
-                            <img class="product-increase" data-id="${keys[i]}" src="./img/svg/+.svg" alt="product-increase">
+                            <img class="product-decrease" src="../../../../assets/images/svg/-.svg" alt="product-decrease">
+                            <span class="product-amount" id="product-amount"> {{countId}} </span>
+                            <img class="product-increase" src="../../../../assets/images/svg/+.svg" alt="product-increase">
                         </div>
                     </div>
                     <div class="product-main">
@@ -21,7 +21,7 @@
                         <span class="product-price"> Item Price ₽ </span>
                     </div>
                     <div class="product-footer">
-                        <img class="product-delete" src="./img/svg/delete.svg" alt="product-delete">
+                        <img class="product-delete" src="../../../../assets/images/svg/delete.svg" alt="product-delete">
                         <span class="product-total-price"> Item Price * Selected Product Amount ₽ </span>
                     </div>
                 </li>
@@ -41,4 +41,4 @@
     </div>
 </main>
 
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->
