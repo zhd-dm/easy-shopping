@@ -5,7 +5,8 @@ export const PRODUCTS = [{
             "price": "2927",
             "rate": "4.7",
             "width": "221",
-            "height": "238"
+            "height": "238",
+            "count" : 1
         },
         {
             "art": "earpods",
@@ -14,7 +15,8 @@ export const PRODUCTS = [{
             "price": "2327",
             "rate": "4.5",
             "width": "221",
-            "height": "238"
+            "height": "238",
+            "count" : 1
         },
         {
             "art": "case-earpods",
@@ -23,7 +25,8 @@ export const PRODUCTS = [{
             "price": "2327",
             "rate": "4.5",
             "width": "219",
-            "height": "179"
+            "height": "179",
+            "count" : 1
         },
         {
             "art": "airpods",
@@ -32,7 +35,8 @@ export const PRODUCTS = [{
             "price": "9527",
             "rate": "4.7",
             "width": "221",
-            "height": "239"
+            "height": "239",
+            "count" : 1
         },
         {
             "art": "gerlax",
@@ -41,7 +45,8 @@ export const PRODUCTS = [{
             "price": "6527",
             "rate": "4.7",
             "width": "221",
-            "height": "238"
+            "height": "238",
+            "count" : 1
         },
         {
             "art": "borofone",
@@ -50,6 +55,7 @@ export const PRODUCTS = [{
             "price": "7527",
             "rate": "4.7",
             "width": "201",
-            "height": "241"
+            "height": "241",
+            "count" : 1
         }
     ]

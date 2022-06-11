@@ -24,8 +24,7 @@ export class ProductListComponent implements OnInit {
   }
 
   addToCart(art: string) {
-    console.log(art)
-    this.producter.setProducts(art);
+    this.producter.setProductsToCart(art);
   }
 
 }

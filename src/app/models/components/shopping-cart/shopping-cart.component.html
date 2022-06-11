@@ -9,10 +9,10 @@
             <ul class="cart-items-list">
                 <li class="cart-item" *ngFor="let product of cart">
                     <div class="product-header">
-                        <img class="product-image" src="${product.src}" alt="product-image">
+                        <img class="product-image" src={{product.src}} alt="product-image">
                         <div class="product-change-amount">
                             <img class="product-decrease" src="../../../../assets/images/svg/-.svg" alt="product-decrease">
-                            <span class="product-amount" id="product-amount"> {{countId}} </span>
+                            <span class="product-amount" id="product-amount"> {{product.count}} </span>
                             <img class="product-increase" src="../../../../assets/images/svg/+.svg" alt="product-increase">
                         </div>
                     </div>

@@ -6,4 +6,5 @@ export interface IProduct {
   rate: number;
   width: number;
   height: number;
+  count?: number;
 }

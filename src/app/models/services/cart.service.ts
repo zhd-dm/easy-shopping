@@ -15,29 +15,30 @@ export class CartService {
       localStorage.setItem('Products', JSON.stringify(PRODUCTS));
     }
     let storage: IProduct[] = [];
-    storage = JSON.parse(localStorage.getItem('Products') || 'Empty storage');
+    storage = JSON.parse(localStorage.getItem('Products')!);
     return storage;
   }
 
-  setProducts(id: string) {
+  setProductsToCart(art: string) {
+    let cart: any = [];
     if(!localStorage.getItem('Cart')) {
       localStorage.setItem('Cart', JSON.stringify([]));
     }
-    let storage = JSON.parse(localStorage.getItem('Cart') || 'Empty cart');
-    for(let i = 0; i <= storage.length; i++) {
-      if(id == storage[i].id) {
-        storage[i].count++;
+    let data = JSON.parse(localStorage.getItem('Products')!);
+        cart = JSON.parse(localStorage.getItem('Cart')!);
+    for(let i = 0; i < data.length; i++) {
+      if(art === data[i].art) {
+        cart.push(data[i]);
       }
-      storage.push({id: id, count: 1});
     }
-    return localStorage.setItem('Cart', JSON.stringify(storage));
+    return localStorage.setItem('Cart', JSON.stringify(cart));
   }
 
   getCount() {
     if(!localStorage.getItem('Cart')) {
       return 0;
     } else {
-      let storage = JSON.parse(localStorage.getItem('Cart') || 'Empty cart');
+      let storage = JSON.parse(localStorage.getItem('Cart')!);
       return storage.length;
     }
   }
@@ -46,7 +47,7 @@ export class CartService {
     if(!localStorage.getItem('Cart')) {
       localStorage.setItem('Cart', JSON.stringify([]));
     }
-    let storage = JSON.parse(localStorage.getItem('Cart') || 'Empty cart');
+    let storage = JSON.parse(localStorage.getItem('Cart')!);
     return storage;
   }
 
@@ -54,7 +55,7 @@ export class CartService {
     if(!localStorage.getItem('Cart')) {
       localStorage.setItem('Cart', JSON.stringify([]));
     }
-    let storage = JSON.parse(localStorage.getItem('Cart') || 'Empty cart');
+    let storage = JSON.parse(localStorage.getItem('Cart')!);
     return storage;
   }
 }
